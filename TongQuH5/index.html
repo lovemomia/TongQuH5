@@ -2,24 +2,53 @@
 <html lang="zh-CN">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=750px,target-densitydpi=device-dpi,user-scalable=no">
+		<meta name="viewport" content="width=device-width,target-densitydpi=device-dpi,user-scalable=no">
 		<title>童趣</title>
-		<link rel="stylesheet" type="text/css" href="CSS/init.css">
+		<link rel="stylesheet" type="text/css" href="CSS/main.css">
 		<script type="text/javascript" src="JS/zepto.min.js"></script>
 		<script type="text/javascript" src="JS/common.js"></script>
 		<script type="text/javascript">
-		    var is_low = navigator.userAgent.toLowerCase().indexOf('android') != -1;
-		    var _ww = (window.screen.availWidth * (window.devicePixelRatio || 1.5) / 1);
-		    if (is_low && _ww < 750) {
-		        document.writeln('<meta name="viewport" content="width=750px,target-densitydpi=device-dpi,user-scalable=yes,initial-scale=0.5" />');
-		    } else {
-		        document.writeln('<meta name="viewport" content="width=750px,target-densitydpi=device-dpi,user-scalable=no" />');
-		    }
+		//     var is_low = navigator.userAgent.toLowerCase().indexOf('android') != -1;
+		//     var _ww = (window.screen.availWidth * (window.devicePixelRatio || 1.5) / 1);
+		//     if (is_low && _ww < 750) {
+		//         document.writeln('<meta name="viewport" content="width=750px,target-densitydpi=device-dpi,user-scalable=yes,initial-scale=0.5" />');
+		//     } else {
+		//         document.writeln('<meta name="viewport" content="width=750px,target-densitydpi=device-dpi,user-scalable=no" />');
+		//     }
+
+		// </script>
+
+		<script type="text/javascript">document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/3+"px";
+		window.onload = function(){
+			tq.home.startMove();
+		}
 		</script>
 	</head>
 	<body>
-		<header>
-			<div class="head"></div>
-		</header>
+		<article id="page">
+			<header>
+				<!-- <div class="head center">
+					<img src="image/logo.png">
+				</div> -->
+				活动详情
+			</header>
+
+			<section>
+				<div id="scroll">
+					<ul id="img">
+						<li><a href="#"><img src="image/3.jpg" /></a></li>
+			          	<li><a href="#"><img src="image/2.jpg" /></a></li>
+			         	<li><a href="#"><img src="image/1.jpg" /></a></li>
+			         	<div style="clear:both"></div>
+					</ul>
+					<ul id="num">
+						<li class="hover"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</section>
+		</article>
+		
 	</body>
 	</html>
